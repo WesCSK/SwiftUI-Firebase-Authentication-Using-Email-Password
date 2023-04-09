@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "swiftrui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Sweekwang/SwiftRUI.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "d2dbba0ca6c90bd6432fc28d4e00b1f75f24392f"
+      }
+    }
+  ],
+  "version" : 2
+}
