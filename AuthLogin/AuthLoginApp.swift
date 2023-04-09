@@ -11,7 +11,7 @@ import SwiftUI
 struct AuthLoginApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RouteView()
         }
     }
 }
