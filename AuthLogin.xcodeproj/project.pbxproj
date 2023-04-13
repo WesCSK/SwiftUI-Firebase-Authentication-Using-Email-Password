@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2009511129E847E0007F9572 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2009511029E847E0007F9572 /* AppDelegate.swift */; };
+		2009511529E84FC3007F9572 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2009511429E84FC3007F9572 /* SplashScreen.swift */; };
 		2010678729E2DD5400DE4EB7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2010678629E2DD5400DE4EB7 /* GoogleService-Info.plist */; };
 		2010678A29E2FBCB00DE4EB7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2010678929E2FBCB00DE4EB7 /* FirebaseAuth */; };
 		2010678D29E2FC1900DE4EB7 /* SwiftRUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2010678C29E2FC1900DE4EB7 /* SwiftRUI */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		2009511029E847E0007F9572 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2009511429E84FC3007F9572 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		2010678629E2DD5400DE4EB7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2047C06029DBB2C300F8E8A9 /* AuthLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2047C06329DBB2C300F8E8A9 /* AuthLoginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLoginApp.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				20B8CA5B29DF274300B6E74E /* ForgotPwdScreen.swift */,
 				20B8CA5F29DF2A6800B6E74E /* RegisterScreen.swift */,
 				20B8CA6129DF2ACD00B6E74E /* HomeScreen.swift */,
+				2009511429E84FC3007F9572 /* SplashScreen.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2009511529E84FC3007F9572 /* SplashScreen.swift in Sources */,
 				2047C07829DBB68600F8E8A9 /* LogoView.swift in Sources */,
 				20B8CA5C29DF274300B6E74E /* ForgotPwdScreen.swift in Sources */,
 				2047C06429DBB2C300F8E8A9 /* AuthLoginApp.swift in Sources */,

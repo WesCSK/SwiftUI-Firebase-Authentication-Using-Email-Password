@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 enum Routes {
     case login
@@ -19,7 +20,7 @@ struct RouteView: View {
     
     var body: some View {
         NavigationStack(path: $navPath) {
-            LoginScreen(navpath: $navPath)
+            SplashScreen()
                 .navigationDestination(for: Routes.self) { routes in
                     switch routes {
                     case .login:
@@ -33,8 +34,20 @@ struct RouteView: View {
                     }
                 }
         }
-
-
+        .onAppear {
+            addListener()
+        }
+    }
+    
+    private func addListener() {
+        Auth.auth().addStateDidChangeListener { auth, user in
+            guard user != nil else {
+                navPath.append(Routes.login)
+                return
+            }
+            
+            navPath.append(Routes.home)
+        }
     }
 }
 

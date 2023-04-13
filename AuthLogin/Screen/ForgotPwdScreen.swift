@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SwiftRUI
+import FirebaseAuth
 
 struct ForgotPwdScreen: View {
     @Binding var navpath: NavigationPath
@@ -47,7 +48,7 @@ struct ForgotPwdScreen: View {
                 
                 
                 RUIRoundedCornerTextButton(text: "Reset") {
-                    navpath.append(Routes.fogotpwd)
+                    resetpassword()
                 }
                 .padding(.top)
                 
@@ -57,6 +58,17 @@ struct ForgotPwdScreen: View {
             } // HStack
             .padding(.horizontal, 32)
             .padding(.vertical)
+        }
+    }
+    
+    private func resetpassword() {
+        Auth.auth().sendPasswordReset(withEmail: email) { error in
+            guard error == nil else {
+                // TODO: - HANDLE ERROR
+                return
+            }
+            
+            isSent = true
         }
     }
 

@@ -71,6 +71,7 @@ struct LoginScreen: View {
             .padding(.horizontal, 32)
             .padding(.vertical)
         }
+        .navigationBarBackButtonHidden(true)
     }
     
     private func loginUser() {
