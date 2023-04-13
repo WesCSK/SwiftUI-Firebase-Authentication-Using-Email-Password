@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2009511129E847E0007F9572 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2009511029E847E0007F9572 /* AppDelegate.swift */; };
+		2010678729E2DD5400DE4EB7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2010678629E2DD5400DE4EB7 /* GoogleService-Info.plist */; };
+		2010678A29E2FBCB00DE4EB7 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2010678929E2FBCB00DE4EB7 /* FirebaseAuth */; };
+		2010678D29E2FC1900DE4EB7 /* SwiftRUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2010678C29E2FC1900DE4EB7 /* SwiftRUI */; };
 		2047C06429DBB2C300F8E8A9 /* AuthLoginApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2047C06329DBB2C300F8E8A9 /* AuthLoginApp.swift */; };
 		2047C06829DBB2C300F8E8A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2047C06729DBB2C300F8E8A9 /* Assets.xcassets */; };
 		2047C06B29DBB2C300F8E8A9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2047C06A29DBB2C300F8E8A9 /* Preview Assets.xcassets */; };
@@ -17,10 +21,11 @@
 		20B8CA5E29DF28DF00B6E74E /* RouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B8CA5D29DF28DF00B6E74E /* RouteView.swift */; };
 		20B8CA6029DF2A6800B6E74E /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B8CA5F29DF2A6800B6E74E /* RegisterScreen.swift */; };
 		20B8CA6229DF2ACD00B6E74E /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B8CA6129DF2ACD00B6E74E /* HomeScreen.swift */; };
-		20F6989D29DECC8700ED4757 /* SwiftRUI in Frameworks */ = {isa = PBXBuildFile; productRef = 20F6989C29DECC8700ED4757 /* SwiftRUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2009511029E847E0007F9572 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2010678629E2DD5400DE4EB7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2047C06029DBB2C300F8E8A9 /* AuthLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AuthLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2047C06329DBB2C300F8E8A9 /* AuthLoginApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLoginApp.swift; sourceTree = "<group>"; };
 		2047C06729DBB2C300F8E8A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,7 +44,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20F6989D29DECC8700ED4757 /* SwiftRUI in Frameworks */,
+				2010678A29E2FBCB00DE4EB7 /* FirebaseAuth in Frameworks */,
+				2010678D29E2FC1900DE4EB7 /* SwiftRUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +57,7 @@
 			children = (
 				20B8CA5D29DF28DF00B6E74E /* RouteView.swift */,
 				2047C06229DBB2C300F8E8A9 /* AuthLogin */,
+				2010678629E2DD5400DE4EB7 /* GoogleService-Info.plist */,
 				2047C06129DBB2C300F8E8A9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,9 +73,10 @@
 		2047C06229DBB2C300F8E8A9 /* AuthLogin */ = {
 			isa = PBXGroup;
 			children = (
+				2009511029E847E0007F9572 /* AppDelegate.swift */,
+				2047C06329DBB2C300F8E8A9 /* AuthLoginApp.swift */,
 				2047C07429DBB5D000F8E8A9 /* Components */,
 				2047C07329DBB2D900F8E8A9 /* Screen */,
-				2047C06329DBB2C300F8E8A9 /* AuthLoginApp.swift */,
 				2047C06729DBB2C300F8E8A9 /* Assets.xcassets */,
 				2047C06929DBB2C300F8E8A9 /* Preview Content */,
 			);
@@ -120,7 +128,8 @@
 			);
 			name = AuthLogin;
 			packageProductDependencies = (
-				20F6989C29DECC8700ED4757 /* SwiftRUI */,
+				2010678929E2FBCB00DE4EB7 /* FirebaseAuth */,
+				2010678C29E2FC1900DE4EB7 /* SwiftRUI */,
 			);
 			productName = AuthLogin;
 			productReference = 2047C06029DBB2C300F8E8A9 /* AuthLogin.app */;
@@ -151,7 +160,8 @@
 			);
 			mainGroup = 2047C05729DBB2C200F8E8A9;
 			packageReferences = (
-				20F6989B29DECC8700ED4757 /* XCRemoteSwiftPackageReference "SwiftRUI" */,
+				2010678829E2FBCB00DE4EB7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				2010678B29E2FC1900DE4EB7 /* XCRemoteSwiftPackageReference "SwiftRUI" */,
 			);
 			productRefGroup = 2047C06129DBB2C300F8E8A9 /* Products */;
 			projectDirPath = "";
@@ -168,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2047C06B29DBB2C300F8E8A9 /* Preview Assets.xcassets in Resources */,
+				2010678729E2DD5400DE4EB7 /* GoogleService-Info.plist in Resources */,
 				2047C06829DBB2C300F8E8A9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,6 +193,7 @@
 				2047C07829DBB68600F8E8A9 /* LogoView.swift in Sources */,
 				20B8CA5C29DF274300B6E74E /* ForgotPwdScreen.swift in Sources */,
 				2047C06429DBB2C300F8E8A9 /* AuthLoginApp.swift in Sources */,
+				2009511129E847E0007F9572 /* AppDelegate.swift in Sources */,
 				20B8CA6029DF2A6800B6E74E /* RegisterScreen.swift in Sources */,
 				20B8CA6229DF2ACD00B6E74E /* HomeScreen.swift in Sources */,
 				2047C07629DBB5F800F8E8A9 /* RadialBackground.swift in Sources */,
@@ -389,7 +401,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		20F6989B29DECC8700ED4757 /* XCRemoteSwiftPackageReference "SwiftRUI" */ = {
+		2010678829E2FBCB00DE4EB7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		2010678B29E2FC1900DE4EB7 /* XCRemoteSwiftPackageReference "SwiftRUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Sweekwang/SwiftRUI.git";
 			requirement = {
@@ -400,9 +420,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		20F6989C29DECC8700ED4757 /* SwiftRUI */ = {
+		2010678929E2FBCB00DE4EB7 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 20F6989B29DECC8700ED4757 /* XCRemoteSwiftPackageReference "SwiftRUI" */;
+			package = 2010678829E2FBCB00DE4EB7 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		2010678C29E2FC1900DE4EB7 /* SwiftRUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2010678B29E2FC1900DE4EB7 /* XCRemoteSwiftPackageReference "SwiftRUI" */;
 			productName = SwiftRUI;
 		};
 /* End XCSwiftPackageProductDependency section */
