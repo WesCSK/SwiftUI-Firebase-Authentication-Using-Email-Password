@@ -55,7 +55,6 @@
 		2047C05729DBB2C200F8E8A9 = {
 			isa = PBXGroup;
 			children = (
-				20B8CA5D29DF28DF00B6E74E /* RouteView.swift */,
 				2047C06229DBB2C300F8E8A9 /* AuthLogin */,
 				2010678629E2DD5400DE4EB7 /* GoogleService-Info.plist */,
 				2047C06129DBB2C300F8E8A9 /* Products */,
@@ -74,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				2009511029E847E0007F9572 /* AppDelegate.swift */,
+				20B8CA5D29DF28DF00B6E74E /* RouteView.swift */,
 				2047C06329DBB2C300F8E8A9 /* AuthLoginApp.swift */,
 				2047C07429DBB5D000F8E8A9 /* Components */,
 				2047C07329DBB2D900F8E8A9 /* Screen */,

@@ -29,7 +29,7 @@ struct RouteView: View {
                     case .fogotpwd:
                         ForgotPwdScreen(navpath: $navPath)
                     case .home:
-                        HomeScreen()
+                        HomeScreen(navpath: $navPath)
                     }
                 }
         }
