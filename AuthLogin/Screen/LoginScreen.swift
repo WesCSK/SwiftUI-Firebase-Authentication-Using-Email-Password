@@ -55,7 +55,7 @@ struct LoginScreen: View {
                 }
                 
                 RUIRoundedCornerTextButton(text: "Login") {
-                    loginUser()
+                    navpath.append(Routes.home)
                 }
                 .padding(.top)
                 
@@ -72,33 +72,6 @@ struct LoginScreen: View {
             .padding(.vertical)
         }
         .navigationBarBackButtonHidden(true)
-    }
-    
-    private func loginUser() {
-        Auth.auth().signIn(withEmail: email, password: password) {  authResult, error in
-            // TODO: - Checks.
-            
-            guard let result = authResult,
-                  error == nil else {
-                errorMessage = error?.localizedDescription ?? "An error has occurred"
-                return
-            }
-            
-            let user = result.user
-            
-            // Check if user verified his email.
-            if !user.isEmailVerified {
-                user.sendEmailVerification { _ in
-                    // HANDLE ERROR.
-                    errorMessage = "Email is not verified. We have sent you an new email. Follow the step to verify."
-                }
-                return
-            }
-            
-            // Logic successfully.
-            navpath.append(Routes.home)
-        }
-
     }
 }
 

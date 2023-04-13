@@ -48,7 +48,7 @@ struct ForgotPwdScreen: View {
                 
                 
                 RUIRoundedCornerTextButton(text: "Reset") {
-                    resetpassword()
+                    
                 }
                 .padding(.top)
                 
@@ -61,16 +61,6 @@ struct ForgotPwdScreen: View {
         }
     }
     
-    private func resetpassword() {
-        Auth.auth().sendPasswordReset(withEmail: email) { error in
-            guard error == nil else {
-                // TODO: - HANDLE ERROR
-                return
-            }
-            
-            isSent = true
-        }
-    }
 
 }
 

@@ -55,7 +55,7 @@ struct RegisterScreen: View {
                 
                 
                 RUIRoundedCornerTextButton(text: "Sign up") {
-                    createUser()
+                    
                 }
                 .padding(.top)
                 
@@ -72,29 +72,7 @@ struct RegisterScreen: View {
         }
     }
     
-    private func createUser() {
-        // TODO: Verification Check
-        message = ""
-        isError = false
-        
-        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-            
-            guard let result = authResult,
-                  error == nil else {
-                isError.toggle()
-                message = error?.localizedDescription ?? "An error has occured"
-                return
-            }
-            
-            let user = result.user
-            
-            // Send email verification to the email address of the user.
-            user.sendEmailVerification { _ in
-                message = "We has sent an email. Follow the instruction to verify your email address."
-            }
-            
-        }
-    }
+
 }
 
 struct RegisterScreen_Previews: PreviewProvider {

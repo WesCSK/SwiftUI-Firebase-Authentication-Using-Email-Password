@@ -20,7 +20,7 @@ struct RouteView: View {
     
     var body: some View {
         NavigationStack(path: $navPath) {
-            SplashScreen()
+            LoginScreen(navpath: $navPath)
                 .navigationDestination(for: Routes.self) { routes in
                     switch routes {
                     case .login:
@@ -33,20 +33,6 @@ struct RouteView: View {
                         HomeScreen(navpath: $navPath)
                     }
                 }
-        }
-        .onAppear {
-            addListener()
-        }
-    }
-    
-    private func addListener() {
-        Auth.auth().addStateDidChangeListener { auth, user in
-            guard user != nil else {
-                navPath.append(Routes.login)
-                return
-            }
-            
-            navPath.append(Routes.home)
         }
     }
 }
